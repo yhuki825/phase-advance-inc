@@ -703,7 +703,7 @@
        Footer
     ============================================ */
     .footer {
-      padding: 4rem 0;
+      padding: 30px 0;
       background: #fff;
       border-top: 1px solid var(--color-slate-100);
     }
@@ -756,6 +756,15 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
     }
+
+    /* フッター内の画像だけをターゲットにする */
+    .footer img {
+      height: 40px;    /* ← ここで高さをギュッと小さく指定する */
+      width: auto;     /* 横幅は比率を保って自動調整 */
+      display: block;  /* 余計な隙間を消すため */
+    }
+
+
 
     /* ============================================
        Keyframes
@@ -872,7 +881,6 @@
     <div class="container nav__inner">
       <a href="#" class="nav__logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
         <img src="PALLC2.jpg"alt="合同会社フェーズアドバンス ロゴ">
-        
       </a>
 
       <ul class="nav__links">
@@ -972,7 +980,7 @@
     <div class="container">
       <div class="services__header reveal">
         <span class="services__label">Service Portfolio</span>
-        <h2 class="services__heading">事業展開.</h2>
+        <h2 class="services__heading">事業展開</h2>
       </div>
 
       <div class="services__grid">
@@ -993,7 +1001,7 @@
               <span class="service-card__en-title">Benefit Support</span>
             </div>
             <h3 class="service-card__title">退職前給付金取得サポート</h3>
-            <p class="service-card__desc">キャリアの転換期における経済的基盤を整え、次なる挑戦への安心を最大化する専門的なコンサルティング。</p>
+            <p class="service-card__desc">失業手当の受給額および受給期間を最大化するためのコンサルティング・サポートを行っております。</p>
           </div>
         </div>
 
@@ -1014,7 +1022,7 @@
               <span class="service-card__en-title">Recruitment</span>
             </div>
             <h3 class="service-card__title">人材紹介事業</h3>
-            <p class="service-card__desc">企業と求職者の『志』を繋ぎ、双方が新しいフェーズへ進めるための最適なマッチングを実現します。</p>
+            <p class="service-card__desc">キャリアコンサルティングから最適な職場のご紹介まで、一貫してサポートいたします。</p>
           </div>
         </div>
 
@@ -1035,7 +1043,7 @@
               <span class="service-card__en-title">Sales Agency</span>
             </div>
             <h3 class="service-card__title">営業代行事業</h3>
-            <p class="service-card__desc">圧倒的な実行力でクライアントのプロダクトを市場の最前線へ。ビジネスの成長を極限まで加速させます。</p>
+            <p class="service-card__desc">法人・個人を問わず幅広く対応しており、報酬形態についても柔軟にご相談を承ります。</p>
           </div>
         </div>
 
@@ -1056,7 +1064,7 @@
               <span class="service-card__en-title">Oyster Events</span>
             </div>
             <h3 class="service-card__title">牡蠣のイベント出張販売</h3>
-            <p class="service-card__desc">厳選された最高品質の牡蠣を通じて、人々が集い、明日への活力が生まれる特別な食体験をプロデュース。</p>
+            <p class="service-card__desc">岡山県産の高品質な牡蠣を、イベント食材として最適な卸売価格でご提供いたします。</p>
           </div>
         </div>
       </div>
@@ -1084,7 +1092,20 @@
             <span class="company__row-label">Office</span>
             <span class="company__row-value">107-0061<br />東京都港区北青山一丁目3番1号<br />アールキューブ青山3階</span>
           </div>
-          
+          <div class="company__row reveal reveal-delay-2">
+            <span class="company__row-label">設立</span>
+            <span class="company__row-value">2025年12月3日</span>
+          </div>
+          <div class="company__row reveal reveal-delay-2">
+            <span class="company__row-label">代表取締役</span>
+            <span class="company__row-value">十川 大夢</span>
+          </div>
+          <div class="company__row reveal reveal-delay-2">
+            <span class="company__row-label">資本金</span>
+            <span class="company__row-value">100万円</span>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -1096,8 +1117,8 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <div class="footer__brand-text">Phase Advance</div>
-        <div class="footer__brand-sub">Next Phase, Next Challenge.</div>
+        <img src="PALLC2.jpg"alt="合同会社フェーズアドバンス ロゴ">
+        
       </div>
 
       
